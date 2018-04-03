@@ -1,0 +1,47 @@
+﻿<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>职务：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <input type="text" class="input-text" value="" placeholder="" id="Title" name="Title">
+    </div>
+</div>
+
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>是否分专业：</label>
+    <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+        <div class="radio-box">
+            <input name="SFFZY" type="radio" id="s-1" value="1"  >
+            <label for="sex-1">是</label>
+        </div>
+        <div class="radio-box">
+            <input name="SFFZY" type="radio" id="s-2" value="0">
+            <label for="sex-2">否</label>
+        </div>
+    </div>
+</div>
+
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>类型：</label>
+    <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+        <div class="radio-box">
+            <input name="TypeFlag" type="radio" id="sys-1" value="0">
+            <label for="sex-1">内部</label>
+        </div>
+        <div class="radio-box">
+            <input name="TypeFlag" type="radio" id="sys-2"  value="1">
+            <label for="sex-2">外部</label>
+        </div>
+    </div>
+</div>
+
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3">备注：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <textarea name="Description" cols="" rows="" class="textarea" placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="$.Huitextarealength(this,100)"></textarea>
+        <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+    </div>
+</div>
+<div class="row cl">
+    <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+        <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+    </div>
+</div>

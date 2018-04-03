@@ -1,0 +1,74 @@
+﻿<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>姓名：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <input type="text" class="input-text" value="" placeholder="" id="Name" name="Name">
+    </div>
+</div>
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>用户名：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <input type="text" class="input-text" value="" placeholder="" id="UserName" name="UserName">
+    </div>
+</div>
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>密码：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <input type="password" class="input-text" autocomplete="off" value="" placeholder="密码" id="UserPassword" name="UserPassword">
+    </div>
+</div>
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>确认密码：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <input type="password" class="input-text" autocomplete="off" placeholder="确认新密码" id="ConfirmPassword" name="ConfirmPassword">
+    </div>
+</div>
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
+    <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+        <div class="radio-box">
+            <input name="Sex" type="radio" id="sex-1" value="0" checked>
+            <label for="sex-1">男</label>
+        </div>
+        <div class="radio-box">
+            <input type="radio" id="sex-2" name="Sex" value="1">
+            <label for="sex-2">女</label>
+        </div>
+    </div>
+</div>
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <input type="text" class="input-text" value="" placeholder="" id="Phone" name="Phone">
+    </div>
+</div>
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <input type="text" class="input-text" placeholder="" name="Email" id="Email">
+    </div>
+</div>
+@*<div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">角色：</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <span class="select-box" style="width:150px;">
+                <select class="select" name="adminRole" size="1">
+                    <option value="0">超级管理员</option>
+                    <option value="1">总编</option>
+                    <option value="2">栏目主辑</option>
+                    <option value="3">栏目编辑</option>
+                </select>
+            </span>
+        </div>
+    </div>*@
+<div class="row cl">
+    <label class="form-label col-xs-4 col-sm-3">备注：</label>
+    <div class="formControls col-xs-8 col-sm-9">
+        <textarea name="" cols="" rows="" class="textarea" placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="$.Huitextarealength(this,100)"></textarea>
+        <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+    </div>
+</div>
+<div class="row cl">
+    <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+        <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+    </div>
+</div>

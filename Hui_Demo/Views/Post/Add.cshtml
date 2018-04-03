@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Add";
+    Layout = null;
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    @{
+        Html.RenderPartial("~/Views/_Base/_header.cshtml");
+    }
+</head>
+<body>
+    <article class="page-container">
+        <form  class="form form-horizontal" id="form-admin-add">
+            @{
+                Html.RenderPartial("_Form");
+            }
+        </form>
+    </article>
+
+    <!--_footer 作为公共模版分离出去-->
+    @{
+        Html.RenderPartial("~/Views/_Base/_footer.cshtml");
+    }
+    <script type="text/javascript">
+        $(function () {
+            $('.skin-minimal input').iCheck({
+                checkboxClass: 'icheckbox-blue',
+                radioClass: 'iradio-blue',
+                increaseArea: '20%'
+            });
+            $("#form-admin-add").validate({
+                rules: {
+                    Title: {
+                        required: true,
+                    },
+                    TypeFlag: {
+                        required: true,
+                    },
+                    SFFZY: {
+                        required: true,
+                    }
+                },
+                onkeyup: false,
+                focusCleanup: true,
+                success: "valid",
+                submitHandler: function (form) {
+                    $(form).ajaxSubmit({
+                        type: 'post',
+                        url: "/Post/Save",
+                        success: function (data) {
+                            layer.msg('添加成功!', { icon: 1, time: 2000 });
+                        },
+                        error: function (XmlHttpRequest, textStatus, errorThrown) {
+                            layer.msg('error!', { icon: 1, time: 1000 });
+                        }
+                    });
+                    window.parent.location.reload();
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                }
+            });
+        });
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
